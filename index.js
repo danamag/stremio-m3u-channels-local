@@ -1,8 +1,8 @@
 const modules = require('./modules')
 
 const defaults = {
-	name: 'M3U Playlists',
-	prefix: 'm3uplaylist_',
+	name: 'M3U Playlists - Channels',
+	prefix: 'm3uplaychan_',
 	icon: 'https://enjoy.zendesk.com/hc/article_attachments/360004422752/2149-m3u-image.jpg'
 }
 
@@ -49,7 +49,7 @@ module.exports = {
 			id: 'org.' + defaults.name.toLowerCase().replace(/[^a-z]+/g,''),
 			version: '1.0.0',
 			name: defaults.name,
-			description: 'Add M3U playlists to Stremio by URL, supports a maximum of 5 playlists and custom names',
+			description: 'Creates channels based on M3U Playlists. Add M3U playlists to Stremio by URL, supports a maximum of 5 playlists and custom names',
 			resources: ['stream', 'meta', 'catalog'],
 			types: ['tv', 'channel'],
 			idPrefixes: [defaults.prefix],
